@@ -4719,7 +4719,7 @@ babel-preset-current-node-syntax@^1.0.0:
     "@babel/plugin-syntax-optional-chaining" "^7.8.3"
     "@babel/plugin-syntax-top-level-await" "^7.8.3"
 
-"babel-preset-graylog@file:packages/babel-preset-graylog":
+"babel-preset-graylog-tests@file:packages/babel-preset-graylog-tests":
   version "1.0.0"
   dependencies:
     "@babel/core" "^7.18.2"
@@ -8223,7 +8223,7 @@ grapheme-splitter@^1.0.4:
     "@types/create-react-class" "15.6.3"
     "@types/jquery" "3.5.16"
     "@types/react" "18.2.6"
-    babel-preset-graylog "file:../../../../.cache/yarn/v6/npm-graylog-web-plugin-5.2.0-SNAPSHOT-1a75871f-7c0a-4e0a-8d2f-9ef5d8750ed4-1683806747326/node_modules/babel-preset-graylog"
+    babel-preset-graylog-tests "file:../../../../.cache/yarn/v6/npm-graylog-web-plugin-5.2.0-SNAPSHOT-1a75871f-7c0a-4e0a-8d2f-9ef5d8750ed4-1683806747326/node_modules/babel-preset-graylog-tests"
     create-react-class "15.7.0"
     eslint-config-graylog "file:../../../../.cache/yarn/v6/npm-graylog-web-plugin-5.2.0-SNAPSHOT-1a75871f-7c0a-4e0a-8d2f-9ef5d8750ed4-1683806747326/node_modules/eslint-config-graylog"
     formik "2.2.9"
