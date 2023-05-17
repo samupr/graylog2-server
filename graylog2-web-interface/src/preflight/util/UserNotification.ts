@@ -14,11 +14,30 @@
  * along with this program. If not, see
  * <http://www.mongodb.com/licensing/server-side-public-license>.
  */
-package org.graylog.security.certutil.ca.exceptions;
+import { notifications } from '@mantine/notifications';
 
-public class CAStorageException extends Exception {
+const UserNotification = {
+  error(message, title) {
+    notifications.show({
+      message,
+      title: title || 'Error',
+      autoClose: 10000,
+      color: 'red',
+    });
+  },
+  warning(message, title) {
+    notifications.show({
+      message,
+      title: title || 'Attention',
+    });
+  },
+  success(message, title) {
+    notifications.show({
+      message,
+      title: title || 'Information',
+      color: 'green',
+    });
+  },
+};
 
-    public CAStorageException(String message, Throwable cause) {
-        super(message, cause);
-    }
-}
+export default UserNotification;

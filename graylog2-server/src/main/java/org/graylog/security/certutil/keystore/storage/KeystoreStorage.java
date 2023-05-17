@@ -14,20 +14,18 @@
  * along with this program. If not, see
  * <http://www.mongodb.com/licensing/server-side-public-license>.
  */
-package org.graylog.security.certutil.ca.storage;
+package org.graylog.security.certutil.keystore.storage;
 
-import org.graylog.security.certutil.ca.exceptions.CAStorageException;
+import org.graylog.security.certutil.ca.exceptions.KeyStoreStorageException;
 
 import java.nio.file.Path;
 import java.security.KeyStore;
 
-public interface CAKeystoreStorage {
+public interface KeystoreStorage {
 
-    void writeCAKeyStore(final Path keystorePath,
-                         final KeyStore caKeyStore,
-                         final char[] password)
-            throws CAStorageException;
-
-    //TODO: we may need a read method as well, for CSR processing
+    void writeKeyStore(final Path keystorePath,
+                       final KeyStore keyStore,
+                       final char[] password)
+            throws KeyStoreStorageException;
 
 }
